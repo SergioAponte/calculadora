@@ -4,9 +4,44 @@
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
+          <title>Calculadora G4</title>
+          <link rel="stylesheet" href="./style.css">
+          <script defer src="./main.js"></script>
 </head>
 <body>
-          
+          <div class="container general">
+                    <div class="visualizador" id="display"></div>
+                    <div class="container ingresar_valores">
+                              <input type="text" class="valor1" id="num1">
+                              <label for="" class="sumado" id="simbolo"> </label>
+                              <input type="text" class="valor2" id="num2">
+                    </div>
+                    <div class="container teclado">
+                              <div class="sector1">
+                                        <button id="btn_7" class="teclados">7</button>
+                                        <button id="btn_8" class="teclados">8</button>
+                                        <button id="btn_9" class="teclados">9</button>
+                                        <button id="btn_+" class="teclados" onclick="operador('+')">+</button>
+                              </div>
+                              <div class="sector2">
+                                        <button id="btn_4" class="teclados">4</button>
+                                        <button id="btn_5" class="teclados">5</button>
+                                        <button id="btn_6" class="teclados">6</button>
+                                        <button id="btn_-" class="teclados" onclick="operador('-')">-</button>
+                              </div>
+                              <div class="sector3">
+                                        <button id="btn_1" class="teclados">1</button>
+                                        <button id="btn_2" class="teclados">2</button>
+                                        <button id="btn_3" class="teclados">3</button>
+                                        <button id="btn_*" class="teclados" onclick="operador('*')">*</button>
+                              </div>
+                              <div class="sector4">
+                                        <button id="btn_0" class="teclados">0</button>
+                                        <button id="btn_=" class="teclados" onclick="mostrar()">=</button>
+                                        <button id="btn_AC" class="teclados" onclick="operador('AC')">AC</button>
+                                        <button id="btn_/" class="teclados" onclick="operador('/')">/</button>
+                              </div>
+                    </div>
+          </div>
 </body>
 </html>
