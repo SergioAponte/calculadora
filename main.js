@@ -1,10 +1,21 @@
+const contenedor=[]
+let recorrido=false
+
 function mostrar(){
           document.getElementById("display").innerText=resultado
 }
+
+function registrar(){
+          while (recorrido!=mostrar()){
+                    valor=parseInt(document.getElementById("numeros"))
+                    contenedor+=valor
+          }
+}
+
 function operador(operando){
           switch(operando){
                     case '+':
-                              resultado=parseInt(num1.value) + parseInt(num2.value)
+                              resultado=(contenedor[0]+contenedor[1])
                               simbolo.innerText='+'
                               console.log(resultado)
                               break
@@ -26,8 +37,8 @@ function operador(operando){
                     case 'AC':
                               resultado=' '
                               simbolo.innerText=' '
-                              num1=' '
-                              num2=' '
+                              num1.value=' '
+                              num2.value=' '
                               mostrar()
                               break
           }
