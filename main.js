@@ -1,45 +1,38 @@
-const contenedor=[]
-let recorrido=false
-
+let number=0
+let number2=0
 function mostrar(){
-          document.getElementById("display").innerText=resultado
+    number2=document.getElementById('numeros')
+    resultado= parseInt(number) + parseInt(number2)
+    document.getElementById("display").innerText=resultado
 }
-
-function registrar(){
-          while (recorrido!=mostrar()){
-                    valor=parseInt(document.getElementById("numeros"))
-                    contenedor+=valor
-          }
-}
-
 function operador(operando){
-          switch(operando){
-                    case '+':
-                              resultado=(contenedor[0]+contenedor[1])
-                              simbolo.innerText='+'
-                              console.log(resultado)
-                              break
-                    case '-':
-                              resultado=parseInt(num1.value) - parseInt(num2.value)
-                              simbolo.innerText='-'
-                              console.log(resultado)
-                              break
-                    case '*':
-                              resultado=parseInt(num1.value) * parseInt(num2.value)
-                              simbolo.innerText='*'
-                              console.log(resultado)
-                              break
-                    case '/':
-                              resultado=parseInt(num1.value) / parseInt(num2.value)
-                              simbolo.innerText='/'
-                              console.log(resultado)
-                              break
-                    case 'AC':
-                              resultado=' '
-                              simbolo.innerText=' '
-                              num1.value=' '
-                              num2.value=' '
-                              mostrar()
-                              break
-          }
+    switch(operando){
+            case '+':
+                simbolo.innerText='+'
+                number=document.getElementById('numeros')
+                numeros.value=''
+                break
+            case '-':
+                resultado=parseInt(num1.value) - parseInt(num2.value)
+                simbolo.innerText='-'
+                console.log(resultado)
+                break
+            case '*':
+                resultado=parseInt(num1.value) * parseInt(num2.value)
+                simbolo.innerText='*'
+                console.log(resultado)
+                break
+            case '/':
+                resultado=parseInt(num1.value) / parseInt(num2.value)
+                simbolo.innerText='/'
+                console.log(resultado)
+                break
+            case 'AC':
+                resultado=' '
+                simbolo.innerText=' '
+                num1.value=' '
+                num2.value=' '
+                mostrar()
+                break
+    }
 }
