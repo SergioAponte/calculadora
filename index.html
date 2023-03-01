@@ -9,38 +9,37 @@
           <script defer src="./main.js"></script>
 </head>
 <body>
-          <div class="container general">
-                    <div class="visualizador" id="display"></div>
-                    <div class="container ingresar_valores">
-                              <input type="text" class="valor1" id="numeros" >
-                              <label for="" class="sumado" id="simbolo"> </label>
-                    </div>
-                    <div class="container teclado">
-                              <div class="sector1">
-                                        <button id="btn_7" class="teclados">7</button>
-                                        <button id="btn_8" class="teclados">8</button>
-                                        <button id="btn_9" class="teclados">9</button>
-                                        <button id="btn_+" class="teclados" onclick="operador('+')">+</button>
-                              </div>
-                              <div class="sector2">
-                                        <button id="btn_4" class="teclados">4</button>
-                                        <button id="btn_5" class="teclados">5</button>
-                                        <button id="btn_6" class="teclados">6</button>
-                                        <button id="btn_-" class="teclados" onclick="operador('-')">-</button>
-                              </div>
-                              <div class="sector3">
-                                        <button id="btn_1" class="teclados">1</button>
-                                        <button id="btn_2" class="teclados">2</button>
-                                        <button id="btn_3" class="teclados">3</button>
-                                        <button id="btn_*" class="teclados" onclick="operador('*')">*</button>
-                              </div>
-                              <div class="sector4">
-                                        <button id="btn_0" class="teclados">0</button>
-                                        <button id="btn_=" class="teclados" onclick="mostrar('=')">=</button>
-                                        <button id="btn_AC" class="teclados" onclick="operador('AC')">AC</button>
-                                        <button id="btn_/" class="teclados" onclick="operador('/')">/</button>
-                              </div>
-                    </div>
-          </div>
+    <div class="container general">
+        <div class="visualizador" id="display"></div>
+        <div class="container ingresar_valores">
+            <label for="" class="sumado" id="simbolo"> </label>
+        </div>
+        <div class="container teclado">
+            <div class="sector1">
+                <button id="btn_7" class="teclados" value="7">7</button>
+                <button id="btn_8" class="teclados" value="8">8</button>
+                <button id="btn_9" class="teclados" value="9">9</button>
+                <button id="btn_+" class="teclados" onclick="operador('+')">+</button>
+            </div>
+            <div class="sector2">
+                <button id="btn_4" class="teclados" value="4">4</button>
+                <button id="btn_5" class="teclados" value="5">5</button>
+                <button id="btn_6" class="teclados" value="6">6</button>
+                <button id="btn_-" class="teclados"  onclick="operador('-')">-</button>
+            </div>
+            <div class="sector3">
+                <button id="btn_1" class="teclados" value="1">1</button>
+                <button id="btn_2" class="teclados" value="2">2</button>
+                <button id="btn_3" class="teclados" value="3">3</button>
+                <button id="btn_*" class="teclados"  onclick="operador('*')">*</button>
+            </div>
+            <div class="sector4">
+                <button id="btn_0" class="teclados" value="0">0</button>
+                <button id="btn_=" class="teclados" onclick="mostrar('=')">=</button>
+                <button id="btn_AC" class="teclados" onclick="operador('AC')">AC</button>
+                <button id="btn_/" class="teclados" onclick="operador('/')">/</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
